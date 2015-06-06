@@ -1,5 +1,5 @@
 .bs-sidebar.well {
-    /*margin-bottom: 0;*/
+    /* margin-bottom: 0; */
 }
 
 .bs-sidebar .nav > li > a:hover,
@@ -17,8 +17,8 @@
 
 @media (min-width: 992px) {
     .bs-sidebar.affix {
-        /*top: 60px;*/
-        /*bottom: 0px;*/
+        /* top: 60px; */
+        /* bottom: 0px; */
         top: 80px;
         bottom: 23px;
         overflow: auto;
