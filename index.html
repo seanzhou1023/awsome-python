@@ -197,9 +197,11 @@
         
             <li><a href="#static-site-generator">Static Site Generator</a></li>
         
-            <li><a href="#processes-and-threads">Processes and Threads</a></li>
+            <li><a href="#processes">Processes</a></li>
         
-            <li><a href="#concurrency-and-networking">Concurrency and Networking</a></li>
+            <li><a href="#concurrency-and-parallelism">Concurrency and Parallelism</a></li>
+        
+            <li><a href="#networking">Networking</a></li>
         
             <li><a href="#websocket">WebSocket</a></li>
         
@@ -331,8 +333,9 @@
 <li><a href="#tagging">Tagging</a></li>
 <li><a href="#admin-panels">Admin Panels</a></li>
 <li><a href="#static-site-generator">Static Site Generator</a></li>
-<li><a href="#processes-and-threads">Processes and Threads</a></li>
-<li><a href="#concurrency-and-networking">Concurrency and Networking</a></li>
+<li><a href="#processes">Processes</a></li>
+<li><a href="#concurrency-and-parallelism">Concurrency and Parallelism</a></li>
+<li><a href="#networking">Networking</a></li>
 <li><a href="#websocket">WebSocket</a></li>
 <li><a href="#wsgi-servers">WSGI Servers</a></li>
 <li><a href="#rpc-servers">RPC Servers</a></li>
@@ -426,6 +429,7 @@
 <li><a href="https://github.com/ivankravets/platformio">PlatformIO</a> - A console tool to build code with different development platforms.</li>
 <li><a href="http://www.yoctoproject.org/docs/1.6/bitbake-user-manual/bitbake-user-manual.html">BitBake</a> - A make-like build tool with the special focus of distributions and packages for embedded Linux.</li>
 <li><a href="https://code.google.com/p/fabricate/">fabricate</a> - A build tool that finds dependencies automatically for any language.</li>
+<li><a href="https://github.com/pybuilder/pybuilder">PyBuilder</a> - A continuous build tool written in pure Python which mainly targets Python applications.</li>
 </ul>
 <h2 id="interactive-interpreter">Interactive Interpreter</h2>
 <p><em>Interactive Python interpreters (REPL).</em></p>
@@ -590,6 +594,7 @@
 <li><a href="https://github.com/nvbn/thefuck">thefuck</a> - Correcting your previous console command.</li>
 <li><a href="https://github.com/sloria/doitlive">doitlive</a> - A tool for live presentations in the terminal.</li>
 <li><a href="https://github.com/facebook/PathPicker">PathPicker</a> - Select files out of bash output.</li>
+<li><a href="https://github.com/glamp/bashplotlib">bashplotlib</a> - Making basic plots in the terminal. It's a quick way to visualize data without GUI.</li>
 </ul>
 </li>
 </ul>
@@ -802,6 +807,7 @@
 <li><a href="https://github.com/jeffknupp/sandman">sandman</a> - Automated REST APIs for existing database-driven systems.</li>
 <li><a href="http://restless.readthedocs.org/en/latest/">restless</a> - Framework agnostic REST framework based on lessons learned from TastyPie.</li>
 <li><a href="https://github.com/RueLaLa/savory-pie/">savory-pie</a> - REST API building library (django, and others)</li>
+<li><a href="https://github.com/vertical-knowledge/ripozo">ripozo</a> - A tool for quickly creating REST/HATEOAS/Hypermedia APIs with extensions for Flask and Django.</li>
 </ul>
 <h2 id="authentication">Authentication</h2>
 <p><em>Libraries for implementing authentications schemes.</em></p>
@@ -972,6 +978,7 @@
 <h2 id="data-validation">Data Validation</h2>
 <p><em>Libraries for validating data. Used for forms in many cases.</em></p>
 <ul>
+<li><a href="http://python-cerberus.org">Cerberus</a> - A mappings-validator with a variety of rules, normalization-features and simple customization that uses a pythonic schema-definition.</li>
 <li><a href="https://github.com/alecthomas/voluptuous">voluptuous</a> - A Python data validation library. It is primarily intended for validating data coming into Python as JSON, YAML, etc.</li>
 <li><a href="http://docs.pylonsproject.org/projects/colander/">colander</a> - A system for validating and deserializing data obtained via XML, JSON, an HTML form post or any other equally simple data serialization.</li>
 <li><a href="https://github.com/halst/schema">schema</a> - A library for validating Python data structures.</li>
@@ -1009,32 +1016,37 @@
 <li><a href="http://www.getnikola.com/">Nikola</a> - A static website and blog generator.</li>
 <li><a href="http://tinkerer.me/">Tinkerer</a> - Tinkerer is a blogging engine/.static website generator powered by Sphinx.</li>
 </ul>
-<h2 id="processes-and-threads">Processes and Threads</h2>
-<p><em>Libraries for working with processes or threads</em></p>
+<h2 id="processes">Processes</h2>
+<p><em>Libraries for starting and communicating with OS processes.</em></p>
+<ul>
+<li><a href="https://github.com/kennethreitz/envoy">envoy</a> - Python <a href="https://docs.python.org/2/library/subprocess.html">subprocess</a> for Humans™.</li>
+<li><a href="https://github.com/amoffat/sh">sh</a> - A full-fledged subprocess replacement for Python.</li>
+<li><a href="http://sarge.readthedocs.org/">sarge</a> - Yet another wrapper for subprocess.</li>
+</ul>
+<h2 id="concurrency-and-parallelism">Concurrency and Parallelism</h2>
+<p><em>Libraries for concurrent and parallel execution.</em></p>
 <ul>
 <li><a href="https://docs.python.org/2/library/multiprocessing.html">multiprocessing</a> - (Python standard library) Process-based "threading" interface.</li>
 <li><a href="https://docs.python.org/2/library/threading.html">threading</a> - (Python standard library) Higher-level threading interface.</li>
-<li><a href="https://github.com/kennethreitz/envoy">envoy</a> - Python Subprocesses for Humans™.</li>
-<li><a href="https://github.com/amoffat/sh">sh</a> - A full-fledged <a href="https://docs.python.org/2/library/subprocess.html">subprocess</a> replacement for Python.</li>
-<li><a href="http://sarge.readthedocs.org/">sarge</a> - A wrapper for subprocess.</li>
+<li><a href="http://www.gevent.org/">gevent</a> - A coroutine-based Python networking library that uses <a href="https://github.com/python-greenlet/greenlet">greenlet</a>.</li>
+<li><a href="http://eventlet.net/">eventlet</a> - Asynchronous framework with WSGI support.</li>
+<li><a href="https://github.com/madisonmay/Tomorrow">Tomorrow</a> - Magic decorator syntax for asynchronous code.</li>
 </ul>
-<h2 id="concurrency-and-networking">Concurrency and Networking</h2>
-<p><em>Libraries for concurrency and network programming.</em></p>
+<h2 id="networking">Networking</h2>
+<p><em>Libraries for networking programming.</em></p>
 <ul>
 <li><a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> - (Python standard library in Python 3.4+) Asynchronous I/O, event loop, coroutines and tasks.</li>
-<li><a href="http://www.gevent.org/">gevent</a> - A coroutine-based Python networking library that uses <a href="https://github.com/python-greenlet/greenlet">greenlet</a>.</li>
 <li><a href="https://twistedmatrix.com/trac/">Twisted</a> - An event-driven networking engine.</li>
 <li><a href="http://www.tornadoweb.org/">Tornado</a> - A Web framework and asynchronous networking library.</li>
 <li><a href="https://github.com/quantmind/pulsar">pulsar</a> - Event-driven concurrent framework for Python.</li>
 <li><a href="https://github.com/jamwt/diesel">diesel</a> - Greenlet-based event I/O Framework for Python.</li>
-<li><a href="http://eventlet.net/">eventlet</a> - Asynchronous framework with WSGI support.</li>
-<li><a href="http://zeromq.github.io/pyzmq/">pyzmq</a> - A Python wrapper for the 0MQ message library.</li>
-<li><a href="https://github.com/smira/txZMQ">txZMQ</a> - Twisted based wrapper for the 0MQ message library.</li>
-<li><a href="http://crossbar.io">Crossbar</a> - Open-source Unified Application Router (Websocket &amp; WAMP for Python on Autobahn).</li>
+<li><a href="http://zeromq.github.io/pyzmq/">pyzmq</a> - A Python wrapper for the ZeroMQ message library.</li>
+<li><a href="https://github.com/smira/txZMQ">txZMQ</a> - Twisted based wrapper for the ZeroMQ message library.</li>
 </ul>
 <h2 id="websocket">WebSocket</h2>
 <p><em>Libraries for working with WebSocket.</em></p>
 <ul>
+<li><a href="https://github.com/crossbario/crossbar/">Crossbar</a> - Open-source Unified Application Router (Websocket &amp; WAMP for Python on Autobahn).</li>
 <li><a href="https://github.com/tavendo/AutobahnPython">AutobahnPython</a> - WebSocket &amp; WAMP for Python on Twisted and <a href="https://docs.python.org/3/library/asyncio.html">asyncio</a>.</li>
 <li><a href="https://github.com/Lawouach/WebSocket-for-Python">WebSocket-for-Python</a> - WebSocket client and server library for Python 2 and 3 as well as PyPy.</li>
 </ul>
@@ -1095,7 +1107,7 @@
 <li><a href="http://www.renpy.org/">RenPy</a> - A Visual Novel engine.</li>
 </ul>
 <h2 id="logging">Logging</h2>
-<p><em>Libraries for generating and working with log files.</em></p>
+<p><em>Libraries for generating and working with logs.</em></p>
 <ul>
 <li><a href="https://docs.python.org/2/library/logging.html">logging</a> - (Python standard library) Logging facility for Python.</li>
 <li><a href="http://pythonhosted.org/Logbook/">logbook</a> - Logging replacement for Python.</li>
@@ -1114,6 +1126,8 @@
 <li><a href="https://github.com/benjamin-hodgson/Contexts">contexts</a> - A BDD framework for Python 3.3+. Inspired by C#'s <code>Machine.Specifications</code>.</li>
 <li><a href="https://github.com/drslump/pyshould">pyshould</a> - Should style asserts based on <a href="https://github.com/hamcrest/PyHamcrest">PyHamcrest</a>.</li>
 <li><a href="http://heynemann.github.io/pyvows/">pyvows</a> - BDD style testing for Python. Inspired by <a href="http://vowsjs.org/">Vows.js</a>.</li>
+<li><a href="https://github.com/DRMacIver/hypothesis">hypothesis</a> - Hypothesis is an advanced Quickcheck style property based testing library.</li>
+<li><a href="https://github.com/robotframework/robotframework">Robot Framework</a> - A generic test automation framework.</li>
 </ul>
 </li>
 <li>Web Testing<ul>
@@ -1169,8 +1183,7 @@
 <h2 id="debugging-tools">Debugging Tools</h2>
 <p><em>Libraries for debugging code.</em></p>
 <ul>
-<li><a href="https://docs.python.org/2/library/pdb.html">pdb</a> - (Python standard library) The Python Debugger.</li>
-<li><a href="https://pypi.python.org/pypi/ipdb">ipdb</a> - IPython-enabled pdb.</li>
+<li><a href="https://pypi.python.org/pypi/ipdb">ipdb</a> - IPython-enabled <a href="https://docs.python.org/2/library/pdb.html">pdb</a>.</li>
 <li><a href="https://github.com/Kozea/wdb">wdb</a> - An improbable web debugger through WebSockets.</li>
 <li><a href="http://winpdb.org/">winpdb</a> - A Platform Independent Python Debugger with GUI, capable of remote debugging based on rpdb2.</li>
 <li><a href="https://pypi.python.org/pypi/pudb">pudb</a> – A full-screen, console-based Python debugger.</li>
@@ -1182,6 +1195,7 @@
 <li><a href="https://github.com/dcramer/django-devserver">django-devserver</a> - A drop-in replacement for Django's runserver.</li>
 <li><a href="https://github.com/mgood/flask-debugtoolbar">flask-debugtoolbar</a> - A port of the django-debug-toolbar to flask.</li>
 <li><a href="https://github.com/eliben/pyelftools">pyelftools</a> - A pure-Python library for parsing and analyzing ELF files and DWARF debugging information.</li>
+<li><a href="https://github.com/rkern/line_profiler">line_profiler</a> - Line-by-line profiling.</li>
 </ul>
 <h2 id="science-and-data-analysis">Science and Data Analysis</h2>
 <p><em>Libraries for scientific computing and data analyzing.</em></p>
@@ -1214,9 +1228,7 @@
 <li><a href="https://github.com/ContinuumIO/bokeh">bokeh</a> - Interactive Web Plotting for Python.</li>
 <li><a href="https://plot.ly/python">plotly</a> - Collaborative web plotting for Python and matplotlib.</li>
 <li><a href="https://github.com/wrobstory/vincent">vincent</a> - A Python to Vega translator.</li>
-<li><a href="https://github.com/mikedewar/d3py">d3py</a> - A plotting library for Python, based on <a href="http://d3js.org/">D3.js</a>.</li>
 <li><a href="https://github.com/yhat/ggplot">ggplot</a> - Same API as ggplot2 for R.</li>
-<li><a href="https://github.com/kartograph/kartograph.py">Kartograph.py</a> - Rendering beautiful SVG maps in Python.</li>
 <li><a href="http://pygal.org/">pygal</a> - A Python SVG Charts Creator.</li>
 <li><a href="https://pypi.python.org/pypi/pygraphviz">pygraphviz</a> - Python interface to <a href="http://www.graphviz.org/">Graphviz</a>.</li>
 <li><a href="http://www.pyqtgraph.org/">PyQtGraph</a> - Interactive and realtime 2D/3D/Image plotting and science/engineering widgets.</li>
@@ -1386,62 +1398,57 @@
 <li><a href="https://github.com/DamnWidget/anaconda">Anaconda</a> - Anaconda turns your Sublime Text 3 in a full featured Python development IDE.</li>
 </ul>
 </li>
-<li>Atom<ul>
-<li><a href="https://github.com/AtomLinter/Linter">Linter</a> - A static code analysis tool for Atom.</li>
-<li><a href="https://github.com/AtomLinter/linter-flake8">Linter-flake8</a> - An addon to <code>linter</code>, that acts as an interface for <code>flake8</code>.</li>
-<li><a href="https://github.com/jhutchins/virtualenv">virtualenv</a> - Atom package for virtualenv management.</li>
-</ul>
-</li>
 </ul>
 <h2 id="ides">IDEs</h2>
-<p><em>Popular Python IDEs</em></p>
+<p><em>Popular Python IDEs.</em></p>
 <ul>
 <li><a href="https://www.jetbrains.com/pycharm/">PyCharm</a> - Commercial Python IDE based on the IntelliJ platform by JetBrains. Has free community edition available.</li>
-<li><a href="http://komodoide.com/">Komodo</a> - Commercial polyglot IDE with support for Python. </li>
-<li><a href="http://www.liclipse.com/">LiClipse</a> - Free polyglot IDE based on Eclipse. Uses PyDev for Python support. </li>
+<li><a href="http://komodoide.com/">Komodo</a> - Commercial polyglot IDE with support for Python.</li>
+<li><a href="http://www.liclipse.com/">LiClipse</a> - Free polyglot IDE based on Eclipse. Uses PyDev for Python support.</li>
 <li><a href="https://github.com/spyder-ide/spyder">Spyder</a> - Open Source Python IDE.</li>
-<li><a href="http://wingide.com/">Wingware</a> - Commercial IDE for Python.</li>
+<li><a href="http://wingide.com/">WingIDE</a> - Commercial IDE for Python.</li>
 </ul>
 <h1 id="resources">Resources</h1>
 <p>Where to discover new Python libraries.</p>
 <h2 id="websites">Websites</h2>
 <ul>
-<li><a href="http://www.reddit.com/r/python">r/Python</a> - News about Python.</li>
-<li><a href="http://python3wos.appspot.com/">Python 3 Wall of Superpowers</a> - Too many popular Python packages don't support Python 3.</li>
-<li><a href="https://github.com/trending?l=python">Trending Python repositories on GitHub today</a> - Good place to find new Python libraries.</li>
-<li><a href="http://pythonhackers.com/open-source/">Python Hackers</a> - List of top 400 projects in GitHub.</li>
-<li><a href="http://coolgithubprojects.com/">CoolGithubProjects</a> - Sharing cool github projects just got easier!</li>
-<li><a href="http://www.fullstackpython.com/">Full Stack Python</a> - Plain English explanations for every layer of the Python web application stack.</li>
-<li><a href="https://www.djangopackages.com/">Django Packages</a> - A directory of reusable apps, sites, tools, and more for Django projects.</li>
+<li><a href="http://www.reddit.com/r/python">r/Python</a></li>
+<li><a href="http://coolgithubprojects.com/">CoolGithubProjects</a></li>
+<li><a href="https://www.djangopackages.com/">Django Packages</a></li>
+<li><a href="http://www.fullstackpython.com/">Full Stack Python</a></li>
+<li><a href="http://python3wos.appspot.com/">Python 3 Wall of Superpowers</a></li>
+<li><a href="http://pythonhackers.com/open-source/">Python Hackers</a></li>
+<li><a href="https://python.zeef.com/alan.richmond">Python ZEEF</a></li>
+<li><a href="https://github.com/trending?l=python">Trending Python repositories on GitHub today</a></li>
 </ul>
 <h2 id="weekly">Weekly</h2>
 <ul>
+<li><a href="http://importpython.com/newsletter/">Import Python Newsletter</a></li>
 <li><a href="http://pycoders.com/">Pycoder's Weekly</a></li>
 <li><a href="http://www.pythonweekly.com/">Python Weekly</a></li>
-<li><a href="http://importpython.com/newsletter/">Import Python Newsletter</a></li>
 </ul>
 <h2 id="twitter">Twitter</h2>
 <ul>
-<li><a href="https://twitter.com/pypi">@pypi</a></li>
-<li><a href="https://twitter.com/planetpython">@planetpython</a></li>
+<li><a href="https://twitter.com/codetengu">@codetengu</a></li>
 <li><a href="https://twitter.com/getpy">@getpy</a></li>
+<li><a href="https://twitter.com/planetpython">@planetpython</a></li>
 <li><a href="https://twitter.com/pycoders">@pycoders</a></li>
-<li><a href="https://twitter.com/PythonWeekly">@PythonWeekly</a></li>
+<li><a href="https://twitter.com/pypi">@pypi</a></li>
 <li><a href="https://twitter.com/pythontrending">@pythontrending</a></li>
+<li><a href="https://twitter.com/PythonWeekly">@PythonWeekly</a></li>
 </ul>
 <h1 id="other-awesome-lists">Other Awesome Lists</h1>
 <p>List of lists.</p>
 <ul>
 <li>Python<ul>
 <li><a href="https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md">pycrumbs</a></li>
-<li><a href="https://github.com/svaksha/pythonidae">pythonidae</a></li>
 <li><a href="https://github.com/checkcheckzz/python-github-projects">python-github-projects</a></li>
 <li><a href="https://github.com/rasbt/python_reference">python_reference</a></li>
-<li><a href="http://easy-python.readthedocs.org/">easy-python</a></li>
+<li><a href="https://github.com/svaksha/pythonidae">pythonidae</a></li>
 </ul>
 </li>
 <li>Monty<ul>
-<li><a href="https://github.com/bayandin/awesome-awesomeness">awesome-awesomeness</a></li>
+<li><a href="https://github.com/sindresorhus/awesome">awesome</a></li>
 <li><a href="https://github.com/jnv/lists">lists</a></li>
 </ul>
 </li>
