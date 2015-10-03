@@ -405,6 +405,7 @@
 <li><a href="https://pypi.python.org/pypi">Python Package Index</a></li>
 </ul>
 </li>
+<li><a href="https://github.com/nvie/pip-tools">pip-tools</a> - A set of tools to keep your pinned Python dependencies fresh.</li>
 <li><a href="https://github.com/conda/conda/">conda</a> - Cross-platform, Python-agnostic binary package manager.</li>
 <li><a href="http://clarete.li/curdling/">Curdling</a> - Curdling is a command line tool for managing Python packages.</li>
 <li><a href="http://pythonwheels.com/">wheel</a> - The new standard of Python distribution and are intended to replace eggs.</li>
@@ -520,6 +521,7 @@
 <li><a href="https://xlsxwriter.readthedocs.org/">XlsxWriter</a> - A Python module for creating Excel .xlsx files.</li>
 <li><a href="http://xlwings.org/">xlwings</a> - A BSD-licensed library that makes it easy to call Python from Excel and vice versa.</li>
 <li><a href="https://github.com/python-excel/xlwt">xlwt</a> / <a href="https://github.com/python-excel/xlrd">xlrd</a> - Writing and reading data and formatting information from Excel files.</li>
+<li><a href="http://relatorio.tryton.org/">relatorio</a> - Templating OpenDocument files.</li>
 </ul>
 </li>
 <li>PDF<ul>
@@ -580,10 +582,10 @@
 <p><em>Libraries for building command-line application.</em></p>
 <ul>
 <li>Command-line Application Development<ul>
-<li><a href="http://builtoncement.com/">cement</a> - Providing a light-weight and fully featured foundation to build anything from single file scripts to complex and intricately designed applications.</li>
+<li><a href="http://builtoncement.com/">cement</a> - CLI Application Framework for Python.</li>
 <li><a href="http://click.pocoo.org/">click</a> - A package for creating beautiful command line interfaces in a composable way.</li>
 <li><a href="http://docs.openstack.org/developer/cliff/">cliff</a> - A framework for creating command-line programs with multi-level commands.</li>
-<li><a href="http://clime.mosky.tw">Clime</a> – Clime lets you convert any module into a multi-command CLI program without any configuration.</li>
+<li><a href="http://clime.mosky.tw">Clime</a> – Converting any module into a multi-command CLI app without any configuration.</li>
 <li><a href="https://github.com/kennethreitz/clint">clint</a> - Python Command-line Application Tools.</li>
 <li><a href="https://pypi.python.org/pypi/colorama">colorama</a> - Cross-platform colored terminal text.</li>
 <li><a href="http://docopt.org/">docopt</a> - Pythonic command line arguments parser.</li>
@@ -593,14 +595,14 @@
 </ul>
 </li>
 <li>Productivity Tools<ul>
-<li><a href="https://github.com/glamp/bashplotlib">bashplotlib</a> - Making basic plots in the terminal. It's a quick way to visualize data without GUI.</li>
+<li><a href="https://github.com/aws/aws-cli">aws-cli</a> - A universal command-line interface for Amazon Web Services.</li>
+<li><a href="https://github.com/glamp/bashplotlib">bashplotlib</a> - Making basic plots in the terminal.</li>
 <li><a href="https://github.com/brettcannon/caniusepython3">caniusepython3</a> - Determine what projects are blocking you from porting to Python 3.</li>
 <li><a href="https://github.com/audreyr/cookiecutter">cookiecutter</a> - A command-line utility that creates projects from cookiecutters (project templates). E.g. Python package projects, jQuery plugin projects.</li>
 <li><a href="https://github.com/sloria/doitlive">doitlive</a> - A tool for live presentations in the terminal.</li>
 <li><a href="https://github.com/jakubroztocil/httpie">httpie</a> - A command line HTTP client, a user-friendly cURL replacement.</li>
 <li><a href="https://github.com/facebook/PathPicker">PathPicker</a> - Select files out of bash output.</li>
 <li><a href="https://github.com/mooz/percol">percol</a> - Adds flavor of interactive selection to the traditional pipe concept on UNIX.</li>
-<li><a href="http://www.rainbowstream.org/">RainbowStream</a> - Smart and nice Twitter client on terminal.</li>
 <li><a href="https://github.com/nvbn/thefuck">thefuck</a> - Correcting your previous console command.</li>
 </ul>
 </li>
@@ -655,6 +657,7 @@
 <li><a href="http://scikits.appspot.com/talkbox">talkbox</a> - A Python library for speech/signal processing.</li>
 <li><a href="https://github.com/yomguy/TimeSide">TimeSide</a> - Open web audio processing framework.</li>
 <li><a href="https://github.com/devsnd/tinytag">tinytag</a> - A library for reading music meta data of MP3, OGG, FLAC and Wave files.</li>
+<li><a href="http://bspaans.github.io/python-mingus/">mingus</a> - An advanced music theory and notation package with MIDI file and playback support.</li>
 </ul>
 <h2 id="video">Video</h2>
 <p><em>Libraries for manipulating video and GIFs.</em></p>
@@ -704,6 +707,7 @@
 <li><a href="https://github.com/PyMySQL/PyMySQL">PyMySQL</a> - Pure Python MySQL driver compatible to mysql-python.</li>
 <li><a href="https://github.com/gmr/queries">queries</a> - A wrapper of the psycopg2 library for interacting with PostgreSQL.</li>
 <li><a href="http://txpostgres.readthedocs.org/">txpostgres</a> - Twisted based asynchronous driver for PostgreSQL.</li>
+<li><a href="https://pypi.python.org/pypi/python-sql">python-sql</a> - Write SQL queries pythonically.</li>
 </ul>
 </li>
 <li>NoSQL Databases<ul>
@@ -806,20 +810,31 @@
 <h2 id="restful-api">RESTful API</h2>
 <p><em>Libraries for developing RESTful APIs.</em></p>
 <ul>
-<li><a href="http://www.django-rest-framework.org/">django-rest-framework</a> - A powerful and flexible toolkit that makes it easy to build Web APIs.</li>
+<li>Django<ul>
+<li><a href="http://www.django-rest-framework.org/">django-rest-framework</a> - A powerful and flexible toolkit to build web APIs.</li>
 <li><a href="http://tastypieapi.org/">django-tastypie</a> - Creating delicious APIs for Django apps.</li>
-<li><a href="https://github.com/5monkeys/django-formapi">django-formapi</a> - Create JSON APIs with HMAC authentication and Django form-validation.</li>
+<li><a href="https://github.com/5monkeys/django-formapi">django-formapi</a> - Create JSON APIs with Django's form validation.</li>
+</ul>
+</li>
+<li>Flask<ul>
 <li><a href="http://www.flaskapi.org/">flask-api</a> - Browsable Web APIs for Flask.</li>
-<li><a href="http://flask-restful.readthedocs.org/">flask-restful</a> - An extension for Flask that adds support for quickly building REST APIs.</li>
+<li><a href="http://flask-restful.readthedocs.org/">flask-restful</a> - Quickly building REST APIs for Flask.</li>
 <li><a href="https://flask-restless.readthedocs.org/en/latest/">flask-restless</a> - Generating RESTful APIs for database models defined with SQLAlchemy.</li>
-<li><a href="https://github.com/marselester/flask-api-utils">flask-api-utils</a> - Flask extension that takes care of API representation and authentication.</li>
-<li><a href="http://falconframework.org/">falcon</a> - A high-performance Python framework for building cloud APIs and web app backends.</li>
+<li><a href="https://github.com/marselester/flask-api-utils">flask-api-utils</a> - Taking care of API representation and authentication for Flask.</li>
 <li><a href="https://github.com/nicolaiarocci/eve">eve</a> - REST API framework powered by Flask, MongoDB and good intentions.</li>
-<li><a href="https://github.com/jeffknupp/sandman">sandman</a> - Automated REST APIs for existing database-driven systems.</li>
-<li><a href="http://restless.readthedocs.org/en/latest/">restless</a> - Framework agnostic REST framework based on lessons learned from TastyPie.</li>
-<li><a href="https://github.com/RueLaLa/savory-pie/">savory-pie</a> - REST API building library (Django, and others)</li>
-<li><a href="https://github.com/vertical-knowledge/ripozo">ripozo</a> - Quickly creating REST/HATEOAS/Hypermedia APIs with extensions for Flask and Django.</li>
+</ul>
+</li>
+<li>Pyramid<ul>
 <li><a href="https://cornice.readthedocs.org/">cornice</a> - A REST framework for Pyramid.</li>
+</ul>
+</li>
+<li>Framework agnostic<ul>
+<li><a href="http://falconframework.org/">falcon</a> - A high-performance framework for building cloud APIs and web app backends.</li>
+<li><a href="https://github.com/jeffknupp/sandman">sandman</a> - Automated REST APIs for existing database-driven systems.</li>
+<li><a href="http://restless.readthedocs.org/en/latest/">restless</a> - Framework agnostic REST framework based on lessons learned from Tastypie.</li>
+<li><a href="https://github.com/vertical-knowledge/ripozo">ripozo</a> - Quickly creating REST/HATEOAS/Hypermedia APIs.</li>
+</ul>
+</li>
 </ul>
 <h2 id="authentication">Authentication</h2>
 <p><em>Libraries for implementing authentications schemes.</em></p>
@@ -1105,6 +1120,8 @@
 <li><a href="https://github.com/pybee/toga">Toga</a> - A Python native, OS native GUI toolkit.</li>
 <li><a href="http://urwid.org/">urwid</a> - A library for creating terminal GUI applications with strong support for widgets, events, rich colors, etc.</li>
 <li><a href="http://wxpython.org/">wxPython</a> - A blending of the wxWidgets C++ class library with the Python.</li>
+<li><a href="https://wiki.gnome.org/Projects/PyGObject">PyGObject</a> - Python Bindings for GLib/GObject/GIO/GTK+ (GTK+3)</li>
+<li><a href="https://github.com/zoofIO/flexx">Flexx</a> - Flexx is a pure Python toolkit for creating GUI's, that uses web technology for its rendering.</li>
 </ul>
 <h2 id="game-development">Game Development</h2>
 <p><em>Awesome game development libraries.</em></p>
@@ -1205,8 +1222,8 @@
 <li><a href="https://pypi.python.org/pypi/pudb">pudb</a> – A full-screen, console-based Python debugger.</li>
 <li><a href="https://github.com/google/pyringe">pyringe</a> - Debugger capable of attaching to and injecting code into Python processes.</li>
 <li><a href="https://github.com/Kozea/wdb">wdb</a> - An improbable web debugger through WebSockets.</li>
-<li><a href="http://winpdb.org/">winpdb</a> - A Platform Independent Python Debugger with GUI, capable of remote debugging based on rpdb2.</li>
-<li><a href="https://github.com/django-debug-toolbar/django-debug-toolbar">django-debug-toolbar</a> - Display various debug information about the current request/response.</li>
+<li><a href="http://winpdb.org/">winpdb</a> - A Python Debugger with GUI, capable of remote debugging based on <code>rpdb2</code>.</li>
+<li><a href="https://github.com/django-debug-toolbar/django-debug-toolbar">django-debug-toolbar</a> - Display various debug information for Django.</li>
 <li><a href="https://github.com/dcramer/django-devserver">django-devserver</a> - A drop-in replacement for Django's runserver.</li>
 <li><a href="https://github.com/mgood/flask-debugtoolbar">flask-debugtoolbar</a> - A port of the django-debug-toolbar to flask.</li>
 </ul>
@@ -1218,7 +1235,7 @@
 </ul>
 </li>
 <li>Others<ul>
-<li><a href="https://github.com/eliben/pyelftools">pyelftools</a> - A pure-Python library for parsing and analyzing ELF files and DWARF debugging information.</li>
+<li><a href="https://github.com/eliben/pyelftools">pyelftools</a> - Parsing and analyzing ELF files and DWARF debugging information.</li>
 <li><a href="https://github.com/WoLpH/python-statsd">python-statsd</a> - Python Client for the <a href="https://github.com/etsy/statsd/">statsd</a> server.</li>
 </ul>
 </li>
@@ -1317,17 +1334,15 @@
 <ul>
 <li><a href="https://github.com/ansible/ansible">Ansible</a> - A radically simple IT automation platform.</li>
 <li><a href="https://github.com/saltstack/salt">SaltStack</a> - Infrastructure automation and management system.</li>
+<li><a href="http://www.openstack.org/">OpenStack</a> - Open source software for building private and public clouds.</li>
+<li><a href="https://docs.docker.com/compose/">Docker Compose</a> - Fast, isolated development environments using <a href="https://www.docker.com/">Docker</a>.</li>
 <li><a href="http://www.fabfile.org/">Fabric</a> - A simple, Pythonic tool for remote execution and deployment.</li>
 <li><a href="https://github.com/sebastien/cuisine">cuisine</a> - Chef-like functionality for Fabric.</li>
-<li><a href="https://docs.docker.com/compose/">Docker Compose</a> - Fast, isolated development environments using <a href="https://www.docker.com/">Docker</a>.</li>
 <li><a href="https://github.com/ronnix/fabtools">Fabtools</a> - Tools for writing awesome Fabric files.</li>
-<li><a href="http://bitbucket.org/haard/gitapi">gitapi</a> - Pure-Python API for git.</li>
-<li><a href="https://github.com/gunnery/gunnery">gunnery</a> - Multipurpose task execution tool for distributed systems with web-based interface.</li>
+<li><a href="http://bitbucket.org/haard/gitapi">gitapi</a> - Pure-Python API for Git.</li>
 <li><a href="http://bitbucket.org/haard/hgapi">hgapi</a> - Pure-Python API for Mercurial.</li>
-<li><a href="https://github.com/nickstenning/honcho">honcho</a> - A Python port of <a href="https://github.com/ddollar/foreman">Foreman</a>, a tool for managing Procfile-based applications.</li>
-<li><a href="http://www.openstack.org/">OpenStack</a> - Open source software for building private and public clouds.</li>
+<li><a href="https://github.com/nickstenning/honcho">honcho</a> - A Python clone of <a href="https://github.com/ddollar/foreman">Foreman</a>, for managing Procfile-based applications.</li>
 <li><a href="https://github.com/pexpect/pexpect">pexpect</a> - Controlling interactive programs in a pseudo-terminal like GNU expect.</li>
-<li><a href="https://github.com/python-provy/provy">provy</a> - An easy-to-use provisioning system in Python.</li>
 <li><a href="https://github.com/giampaolo/psutil">psutil</a> - A cross-platform process and system utilities module.</li>
 <li><a href="https://github.com/Supervisor/supervisor">supervisor</a> - Supervisor process control system for UNIX.</li>
 </ul>
@@ -1336,7 +1351,8 @@
 <ul>
 <li><a href="http://apscheduler.readthedocs.org/">APScheduler</a> - A light but powerful in-process task scheduler that lets you schedule functions.</li>
 <li><a href="https://github.com/thauber/django-schedule">django-schedule</a> - A calendaring app for Django.</li>
-<li><a href="http://pydoit.org/">doit</a> - A task runner/build tool.</li>
+<li><a href="http://pydoit.org/">doit</a> - A task runner and build tool.</li>
+<li><a href="https://github.com/gunnery/gunnery">gunnery</a> - Multipurpose task execution tool for distributed systems with web-based interface.</li>
 <li><a href="http://pythonhosted.org/joblib/index.html">Joblib</a> - A set of tools to provide lightweight pipelining in Python.</li>
 <li><a href="https://github.com/fengsp/plan">Plan</a> - Writing crontab file in Python like a charm.</li>
 <li><a href="https://github.com/dbader/schedule">schedule</a> - Python job scheduling for humans.</li>
@@ -1384,6 +1400,7 @@
 <li><a href="https://github.com/SavinaRoja/PyUserInput">PyUserInput</a> - A module for cross-platform control of the mouse and keyboard.</li>
 <li><a href="http://www.secdev.org/projects/scapy/">scapy</a> - A brilliant packet manipulation library.</li>
 <li><a href="https://wifi.readthedocs.org/">wifi</a> - A Python library and command line tool for working with WiFi on Linux.</li>
+<li><a href="http://pingo.io">Pingo</a> - Pingo provides a uniform API to program devices like the Raspberry Pi, pcDuino, Intel Galileo, etc.</li>
 </ul>
 <h2 id="compatibility">Compatibility</h2>
 <p><em>Libraries for migrating from Python 2 to 3.</em></p>
@@ -1399,6 +1416,7 @@
 <li><a href="https://github.com/mitsuhiko/itsdangerous">itsdangerous</a> - Various helpers to pass trusted data to untrusted environments.</li>
 <li><a href="https://github.com/mitsuhiko/pluginbase">pluginbase</a> - A simple but flexible plugin system for Python.</li>
 <li><a href="https://github.com/PacketPerception/pychievements">Pychievements</a> - A framework for creating and tracking achievements.</li>
+<li><a href="http://www.tryton.org/">Tryton</a> - A general purpose business framework.</li>
 </ul>
 <h2 id="algorithms-and-design-patterns">Algorithms and Design Patterns</h2>
 <p><em>Python implementation of algorithms and design patterns.</em></p>
@@ -1499,8 +1517,9 @@
 </ul>
 </li>
 </ul>
-<h1 id="contributing"><a href="https://github.com/vinta/awesome-python/blob/master/CONTRIBUTING.md">Contributing</a></h1>
-<p>Your contributions are always welcome!</p></div>
+<h1 id="contributing">Contributing</h1>
+<p>Your contributions are always welcome! Please take a look at the <a href="https://github.com/vinta/awesome-python/blob/master/CONTRIBUTING.md">contribution guidelines</a> first.</p>
+<p>I would keep some pull requests open if I'm not sure whether the libraries are awesome, you could <a href="https://github.com/vinta/awesome-python/pulls">vote for them</a> by leaving a comment that contains <code>+1</code>.</p></div>
         </div>
 
         <footer class="col-md-12">
