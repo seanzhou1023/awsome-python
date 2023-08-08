@@ -127,7 +127,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 
 * [warehouse](https://github.com/pypa/warehouse) - Next generation Python Package Repository (PyPI).
     * [Warehouse](https://warehouse.python.org/)
-* [bandersnatch](https://bitbucket.org/pypa/bandersnatch) - PyPI mirroring tool provided by Python Packaging Authority (PyPA).
+* [bandersnatch](https://github.com/pypa/bandersnatch) - PyPI mirroring tool provided by Python Packaging Authority (PyPA).
 * [devpi](http://doc.devpi.net/latest/) - PyPI server and packaging/testing/release tool.
 * [localshop](https://github.com/mvantellingen/localshop) - Local PyPI server (custom packages and auto-mirroring of pypi).
 
@@ -271,7 +271,6 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 
 *Libraries for storing and parsing configuration options.*
 
-* [config](https://www.red-dove.com/config-doc/) - Hierarchical config from the author of [logging](https://docs.python.org/2/library/logging.html).
 * [ConfigObj](http://www.voidspace.org.uk/python/configobj.html) - INI file parser with validation.
 * [ConfigParser](https://docs.python.org/2/library/configparser.html) - (Python standard library) INI file parser.
 * [profig](http://profig.readthedocs.org/en/default/) - Config from multiple formats with value conversion.
@@ -325,7 +324,6 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [imgSeek](https://sourceforge.net/projects/imgseek/) - A project for searching a collection of images using visual similarity.
 * [nude.py](https://github.com/hhatto/nude.py) - Nudity detection.
 * [pyBarcode](https://pythonhosted.org/pyBarcode/) - Create barcodes in Python without needing PIL.
-* [pygram](https://github.com/ajkumar25/pygram) - Instagram-like image filters.
 * [python-qrcode](https://github.com/lincolnloop/python-qrcode) - A pure Python QR Code generator.
 * [Quads](https://github.com/fogleman/Quads) - Computer art based on quadtrees.
 * [scikit-image](http://scikit-image.org/) - A Python library for (scientific) image processing.
@@ -351,7 +349,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [eyeD3](http://eyed3.nicfit.net/) - A tool for working with audio files, specifically MP3 files containing ID3 metadata.
 * [id3reader](http://nedbatchelder.com/code/modules/id3reader.py) - A Python module for reading MP3 meta data.
 * [m3u8](https://github.com/globocom/m3u8) - A module for parsing m3u8 file.
-* [mutagen](https://bitbucket.org/lazka/mutagen) - A Python module to handle audio metadata.
+* [mutagen](https://github.com/quodlibet/mutagen) - A Python module to handle audio metadata.
 * [pydub](https://github.com/jiaaro/pydub) - Manipulate audio with a simple and easy high level interface.
 * [pyechonest](https://github.com/echonest/pyechonest) - Python client for the [Echo Nest](http://developer.echonest.com/) API.
 * [talkbox](http://scikits.appspot.com/talkbox) - A Python library for speech/signal processing.
@@ -392,7 +390,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 *Databases implemented in Python.*
 
 * [pickleDB](https://pythonhosted.org/pickleDB/) - A simple and lightweight key-value store for Python.
-* [PipelineDB](https://www.pipelinedb.com/) - The Streaming SQL Database.
+* [PipelineDB](https://github.com/pipelinedb/pipelinedb) - The Streaming SQL Database.
 * [TinyDB](https://github.com/msiemens/tinydb) - A tiny, document-oriented database.
 * [ZODB](http://www.zodb.org/en/latest/) - A native object database for Python. A key-value and object graph database.
 
@@ -450,7 +448,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 *Full stack web frameworks.*
 
 * [Django](https://www.djangoproject.com/) - The most popular web framework in Python.
-    * [awesome-django](https://github.com/rosarior/awesome-django)
+    * [awesome-django](https://github.com/wsvincent/awesome-django)
 * [Flask](http://flask.pocoo.org/) - A microframework for Python.
     * [awesome-flask](https://github.com/humiaozuzu/awesome-flask)
 * [Pyramid](http://www.pylonsproject.org/) - A small, fast, down-to-earth, open source Python web framework.
@@ -500,7 +498,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [django-oscar](http://oscarcommerce.com/) - An open-source e-commerce framework for Django.
 * [django-shop](https://github.com/awesto/django-shop) - A Django based shop system.
 * [Cartridge](https://github.com/stephenmcd/cartridge) - A shopping cart app built using the Mezzanine.
-* [shoop](https://www.shoop.io/en/) - An open source E-Commerce platform based on Django.
+* [shoop](https://www.shuup.com/) - An open source E-Commerce platform based on Django.
 * [alipay](https://github.com/lxneng/alipay) - Unofficial Alipay API for Python.
 * [merchant](https://github.com/agiliq/merchant) - A Django app to accept payments from various payment processors.
 * [money](https://github.com/carlospalol/money) - Money class with optional CLDR-backed locale-aware formatting and an extensible currency exchange solution.
@@ -777,7 +775,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 *Libraries for networking programming.*
 
 * [asyncio](https://docs.python.org/3/library/asyncio.html) - (Python standard library) Asynchronous I/O, event loop, coroutines and tasks.
-* [Twisted](https://twistedmatrix.com/trac/) - An event-driven networking engine.
+* [Twisted](https://twisted.org/) - An event-driven networking engine.
 * [pulsar](https://github.com/quantmind/pulsar) - Event-driven concurrent framework for Python.
 * [diesel](https://github.com/dieseldev/diesel) - Greenlet-based event I/O Framework for Python.
 * [pyzmq](http://zeromq.github.io/pyzmq/) - A Python wrapper for the ZeroMQ message library.
@@ -831,7 +829,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [curses](https://docs.python.org/2/library/curses.html#module-curses) - Built-in wrapper for [ncurses](http://www.gnu.org/software/ncurses/) used to create terminal GUI applications.
 * [enaml](https://github.com/nucleic/enaml) - Creating beautiful user-interfaces with Declaratic Syntax like QML.
 * [kivy](https://kivy.org/) - A library for creating NUI applications, running on Windows, Linux, Mac OS X, Android and iOS.
-* [pyglet](https://bitbucket.org/pyglet/pyglet/wiki/Home) - A cross-platform windowing and multimedia library for Python.
+* [pyglet](https://github.com/pyglet/pyglet) - A cross-platform windowing and multimedia library for Python.
 * [PyQt](https://riverbankcomputing.com/software/pyqt/intro) - Python bindings for the [Qt](http://www.qt.io/) cross-platform application and UI framework, with support for both Qt v4 and Qt v5 frameworks.
 * [PySide](https://wiki.qt.io/PySide) - Python bindings for the [Qt](http://www.qt.io/) cross-platform application and UI framework, supporting the Qt v4 framework.
 * [Tkinter](https://wiki.python.org/moin/TkInter) - Tkinter is Python's de-facto standard GUI package.
@@ -1094,7 +1092,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [PeachPy](https://github.com/Maratyszcza/PeachPy) - x86-64 assembler embedded in Python. Can be used as inline assembler for Python or as a stand-alone assembler for Windows, Linux, OS X, Native Client and Go.
 * [PyPy](http://pypy.org/) - An implementation of Python in Python. The interpreter uses black magic to make Python very fast without having to add in additional type information.
 * [Pyston](https://github.com/dropbox/pyston) - A Python implementation built using LLVM and modern JIT techniques with the goal of achieving good performance.
-* [Stackless Python](https://bitbucket.org/stackless-dev/stackless/overview) - An enhanced version of the Python.
+* [Stackless Python](https://github.com/stackless-dev/stackless/wiki/) - An enhanced version of Python.
 
 ## Microsoft Windows
 
@@ -1193,8 +1191,7 @@ Online tools and APIs to simplify development.
 
 * [Codecov](https://codecov.io/) - Code coverage dashboard.
 * [Codacy](https://www.codacy.com/) - Automated Code Review to ship better code, faster. Free for Open Source.
-* [Landscape](https://landscape.io/) - Hosted continuous Python code metrics.
-* [QuantifiedCode](https://www.quantifiedcode.com/) - A data-driven, automated, continuous code review tool.
+* [QuantifiedCode](https://github.com/quantifiedcode/quantifiedcode) - A data-driven, automated, continuous code review tool.
 
 # Resources
 
